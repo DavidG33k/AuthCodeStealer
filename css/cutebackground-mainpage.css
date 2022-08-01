@@ -1,0 +1,10 @@
+html body {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/cutekittens.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: 1000px;
+    background-position-y: 435px;
+   }
+
+   
