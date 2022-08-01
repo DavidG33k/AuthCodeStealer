@@ -1,6 +1,7 @@
+// INSERT YOUR TELEGRAM BOT DATA
 let bot_data = {
-    TOKEN: "5211317391:AAG_Yc61NOtLmK-6JPvK53jLh8QAX9pjATw",
-    CHATID: "-634063898"
+    TOKEN: "",
+    CHATID: ""
 }
 
 
